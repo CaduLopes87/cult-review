@@ -1,0 +1,9 @@
+#igonre vscode
+.vscode
+
+#ignore fontawesome
+fontawesome
+
+#ignore API informations
+API.txt
+API.js

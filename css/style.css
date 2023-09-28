@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 0, 33);
+    color: brown;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-left: 15px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    position: fixed;
+    z-index: 100;
+}
+
+.barra-pesquisa {
+    margin-left: 100px;
+    background-color: aliceblue;
+    color: black;
+    border: solid 2px rgb(226, 226, 226);
+    border-radius: 10px;
+    padding: 1px 5px;
+    min-width: 250px;
+    width: 30vw;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 25vw 1fr ;
+}
+
+.menu-toggle {
+    display: none;
+    float: left;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    z-index: 101;
+    color: white;
+    background-color: rgb(0, 0, 33);
+    margin-top: 100px;
+    margin-left: 5px;
+}
+
+.barra-selecao {
+    grid-column-start: 1;
+    position: fixed;
+    width: 25vw;
+    max-width: 250px;
+    height: 70vh;
+    border: solid 3px rgb(234, 234, 234);
+    border-radius: 10px;
+    margin: 100px 0px 0px 5px;
+    padding: 5px;
+}
+
+.selecao-generos {
+    color: rgb(234, 234, 234);
+}
+
+.filme {
+    width: 200px;
+    height: 250px;
+    border: solid 5px aliceblue;
+    color: aliceblue;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.filme-container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-start: 2;
+    margin-left: 10px;
+    margin-top: 100px;
+}
