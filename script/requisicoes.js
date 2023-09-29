@@ -1,10 +1,12 @@
-export async function obterDadosDaApi(url){
+import { obterURL } from "./API.js";
+
+export async function obterFilmeDaAPI(criterio){
+
+    const url = obterURL(criterio);
+
     const response = await fetch(url);
 
-    // console.log(response);
-
-    const data = await response.json()
-    // console.log(data);
+    const data = await response.json();
 
     return data;
 }
