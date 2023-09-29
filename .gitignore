@@ -7,3 +7,6 @@ fontawesome
 #ignore API informations
 API.txt
 API.js
+
+#ignore package.json
+package.json

@@ -72,6 +72,16 @@ h1 {
     color: rgb(234, 234, 234);
 }
 
+.selecao-filtros {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px 30px 5px;
+}
+.selecao-filtros a {
+    color: aliceblue;
+    margin: 2px 0;
+}
+
 .filme {
     width: 200px;
     height: 250px;
