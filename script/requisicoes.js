@@ -2,7 +2,8 @@ import { obterURL } from "./API.js";
 
 export async function obterFilmeDaAPI(criterio){
 
-    const url = obterURL(criterio);
+    //critério a ser utilizado para a resquisição: Id do filme ou status 
+    const url = obterURL(criterio); 
 
     const response = await fetch(url);
 
