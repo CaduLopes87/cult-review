@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 div {
@@ -16,11 +17,11 @@ div {
     margin-top: 100px;
 }
 
-section {
+.conteudo-perfil {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
     padding: 5px;
 }
 
@@ -106,4 +107,72 @@ section {
     justify-self: center;
     align-self: center;
     width: 100px;
+}
+
+@media (min-width: 750px) {
+
+    .conteudo-perfil {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .backdrop {
+        width: 50vw;
+        align-self: flex-start;
+        margin: 5px;
+        margin-right: 15px;
+        box-shadow: 0px 0px 5px 3px rgba(240, 248, 255, 0.3);
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+    
+    .cabecalho-filme {
+        position: relative;
+        background-color: rgba(49, 25, 98, 0.3);
+        box-shadow: 0px 0px 10px 1px rgba(240, 248, 255, 0.3);
+        width: 45vw;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 10px;
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .sinopse {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+        margin: 0 0 0 10px;
+    }
+    
+    .descricao {
+        color: aliceblue;
+        text-align: justify;
+        width: 41vw;
+        background-color: rgba(49, 25, 98, 0.3);
+        box-shadow: 0px 0px 10px 1px rgba(240, 248, 255, 0.3);
+        border-radius: 10px;
+        padding: 25px;
+        align-self: flex-start;
+    }
+
+    .detalhes {
+        margin: 20px 0 0 0;
+
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
 }

@@ -9,9 +9,9 @@ export function inserirCorpoPrincipalDoFilme(elementoHTML, filme){
     const statusDoSite = filme.homepage === "" ? 'Indisponível' : filme.homepage;
     const siteDoFilme = statusDoSite === 'Indisponível' ? "" : statusDoSite;
 
-    elementoHTML.innerHTML = `<section>
+    elementoHTML.innerHTML = `<section class="conteudo-perfil">
         <img class="backdrop" src="${urlBackdrop}" alt="plano de fundo do filme ${filme.title}">
-    <section class="filme-dados">
+    
         <div class="cabecalho-filme">
             <p class="titulo">${filme.title}</p>
             <p class="tagline">${filme.tagline}</p>
@@ -33,7 +33,7 @@ export function inserirCorpoPrincipalDoFilme(elementoHTML, filme){
             <li>Idioma original: ${filme['original_language']}</li>
             <li>Título original: ${filme['original_title']}</li>
         <ul>
-    </section>
+    
 </section>`;
 
 inserirGeneros(filme);
