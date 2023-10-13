@@ -1,9 +1,9 @@
-const api_key = process.env.api_key;
+const apiKey = process.env.API_KEY;
 
-export const apiUrl = `https://api.themoviedb.org/3/movie/1008042?api_key=${api_key}&language=pt-br`;
+export const apiUrl = `https://api.themoviedb.org/3/movie/1008042?apiKey=${apiKey}&language=pt-br`;
 
 export function obterURL(param) {
-    const novaURL = `https://api.themoviedb.org/3/movie/${param}?api_key=${api_key}&language=pt-br`;
+    const novaURL = `https://api.themoviedb.org/3/movie/${param}?apiKey=${apiKey}&language=pt-br`;
     return novaURL;
 } 
 
