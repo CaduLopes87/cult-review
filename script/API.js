@@ -1,6 +1,6 @@
-const apiKey = process.env.API_KEY;
+// const apiKey = process.env.API_KEY;
 
-// const apiKey = a8ef96a8478ba03d3138ded107eb1def;
+const apiKey = a8ef96a8478ba03d3138ded107eb1def;
 
 export const apiUrl = `https://api.themoviedb.org/3/movie/1008042?api_key=${apiKey}&language=pt-br`;
 
