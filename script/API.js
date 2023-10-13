@@ -1,7 +1,9 @@
-export const apiUrl = 'https://api.themoviedb.org/3/movie/1008042?api_key=a8ef96a8478ba03d3138ded107eb1def&language=pt-br';
+const api_key = process.env.api_key;
+
+export const apiUrl = `https://api.themoviedb.org/3/movie/1008042?api_key=${api_key}&language=pt-br`;
 
 export function obterURL(param) {
-    const novaURL = `https://api.themoviedb.org/3/movie/${param}?api_key=a8ef96a8478ba03d3138ded107eb1def&language=pt-br`;
+    const novaURL = `https://api.themoviedb.org/3/movie/${param}?api_key=${api_key}&language=pt-br`;
     return novaURL;
 } 
 
