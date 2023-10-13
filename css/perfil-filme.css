@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+.voltar {
+    color: aliceblue;
+    font-size: large;
+    margin-left: 10px;
+}
+
+#pagina-filme {
+    margin-top: 100px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.backdrop {
+    width: 90vw;
+    margin: 5px;
+    box-shadow: 0px 0px 5px 3px rgba(240, 248, 255, 0.3);
+}
+
+.cabecalho-filme {
+    position: relative;
+    background-color: rgba(49, 25, 98, 0.3);
+    box-shadow: 0px 0px 10px 1px rgba(240, 248, 255, 0.3);
+    width: 90vw;
+    min-height: 100px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.titulo {
+    color: aliceblue;
+    font-size: larger;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.tagline {
+    margin: 10px 0 5px 20px;
+}
+
+.votos {
+    position: absolute;
+    color: aliceblue;
+    font-size: 1.2em;
+    font-weight: 600;
+    bottom: 5px;
+    right: 15px;
+    
+}
+
+.descricao {
+    color: aliceblue;
+    text-align: justify;
+    margin: 40px 25px 0 25px;
+    width: 70vw;
+}
+
+.descricao p:nth-child(1) {
+    font-size: 1.2em;
+    margin: 10px -10px;
+}
+
+.descricao li {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+
+[lista-generos] li {
+    margin: 10px 0 0 20px;
+}
+
+[lista-produtoras] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+[lista-produtoras] li {
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.7);
+    margin: 10px 0 0 20px;
+    height: 140px;
+    width: 110px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+[lista-produtoras] li img {
+    justify-self: center;
+    align-self: center;
+    width: 100px;
+}

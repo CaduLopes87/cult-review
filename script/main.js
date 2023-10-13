@@ -5,3 +5,4 @@ import { obterFilmeDaAPI } from "./requisicoes.js";
 const filmesContainer = document.getElementById('filme-container');
 
 exibirFilmesComStatus('popular', filmesContainer); //status: popular ou upcoming
+
