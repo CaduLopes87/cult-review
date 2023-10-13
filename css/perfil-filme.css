@@ -168,11 +168,21 @@ div {
 
     .detalhes {
         margin: 20px 0 0 0;
+        width: 90vw;
+        padding-left: 50px;
+        justify-self: center;
 
         grid-row-start: 3;
         grid-row-end: 4;
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: span 2;
     }
-    
+
+    [lista-produtoras] {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }    
 }
