@@ -2,11 +2,11 @@
 .vscode
 
 #ignore fontawesome
-fontawesome
+#fontawesome
 
 #ignore API informations
 API.txt
-API.js
+#API.js
 
 #ignore package.json
 package.json
